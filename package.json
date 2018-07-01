@@ -1,0 +1,25 @@
+{
+  "name": "DualBot",
+  "version": "0.0.3",
+  "description": "Criado para consulta.",
+  "main": "index.js",
+  "keywords": [
+    "DualBoingt",
+    "Discord",
+    "client"
+  ],
+  "author": "DualRoot",
+  "license": "¨34763757653VDFHRGDFGFD5643F",
+  "bugs": {
+    "url": "https://DualRoot.com.br"
+  },
+  "homepage": "https://DualRoot.com.br",
+  "dependencies": {
+    "discord.js": "11.3.2",
+    "fs": "0.0.1-security",
+    "google-translate-api": "^2.3.0",
+    "moment": "^2.22.2",
+    "nodemon": "^1.17.5",
+    "random-puppy": "^1.1.0"
+  }
+}
