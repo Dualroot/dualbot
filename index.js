@@ -16,13 +16,15 @@ bot.on("ready", async() => {
 	//bot.channels.get('462296079946219551').send(":fire:**~Novidades~**:fire:\n\n//\n@here");
 	//bot.channels.get('462296079946219551').send("**Checker PeixeUrbano adicionado com sucesso. Verifique:** r!chks ♥\n@here");
     //bot.channels.get('462296079946219551').send("**Tô de volta porra! Sentiram minha falta ? Claro que sim né** ♥");
-    //bot.channels.get('462296079946219551').send("**Soltei algum no #donates** ♥");
-    //bot.channels.get('461970304458293258').send(":headphones: **Spotify** :headphones:```markdown\n\n#Aprovada gutosan@terra.com.br|b800guto  Premiun for Family (BR) By DualRoot```");
+    bot.channels.get('462296079946219551').send("**Soltei algum no #donates** ♥");
+    bot.channels.get('461970304458293258').send(":dolar: **Aproved** :dolar:```markdown\n\nAprovada	4617255002590435	09	19	345	R$ 28,74	VISA CITIBANK (HONG KONG), LTD. GOLD HONG KONG(HK)	Transação Aprovada	#DualRoot```");
     console.log(`${bot.user.username} esta pronto para brincar com ${bot.users.size} utilizadores!`); // console.log so pode ser visto no console do bot
 	console.log("Codigo refeito por ThePlayer. Se tiver alguma duvida chame !! ThePlayer#0951") // console.log so pode ser visto no console do bot
     bot.user.setActivity(`Porno | r!help`, {type:"WATCHING"}); /*/ Muda a atividade do bot para "assitindo" /*/
 
 });
+
+require.cache[require.resolve('index.js')];
 
 bot.on('guildMemberAdd', member => { 
 
