@@ -20,7 +20,7 @@ bot.on("ready", async() => {
     //bot.channels.get('461970304458293258').send(":headphones: **Spotify** :headphones:```markdown\n\n#Aprovada gutosan@terra.com.br|b800guto  Premiun for Family (BR) By DualRoot```");
     console.log(`${bot.user.username} esta pronto para brincar com ${bot.users.size} utilizadores!`); // console.log so pode ser visto no console do bot
 	console.log("Codigo refeito por ThePlayer. Se tiver alguma duvida chame !! ThePlayer#0951") // console.log so pode ser visto no console do bot
-    bot.user.setActivity(`Porno | r!`, {type:"WATCHING"}); /*/ Muda a atividade do bot para "assitindo" /*/
+    bot.user.setActivity(`Porno | r!help`, {type:"WATCHING"}); /*/ Muda a atividade do bot para "assitindo" /*/
 
 });
 
