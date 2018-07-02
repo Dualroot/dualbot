@@ -20,7 +20,7 @@ bot.on("ready", async() => {
     //bot.channels.get('461970304458293258').send(":dollar: **Aproved** :dollar:```markdown\n\nAprovada	4617255002590435	09	19	345	R$ 28,74	VISA CITIBANK (HONG KONG), LTD. GOLD HONG KONG(HK)	Transação Aprovada	#DualRoot```");
     console.log(`${bot.user.username} esta pronto para brincar com ${bot.users.size} utilizadores!`); // console.log so pode ser visto no console do bot
 	console.log("Codigo refeito por ThePlayer. Se tiver alguma duvida chame !! ThePlayer#0951"); // console.log so pode ser visto no console do bot
-    bot.user.setActivity(`Porno | r!help`, {type:"WATCHING"}); /*/ Muda a atividade do bot para "assitindo" /*/
+    bot.user.setActivity(`Você | r!help`, {type:"LISTENING"}); /*/ Muda a atividade do bot para "assitindo" /*/
 
 });
 
@@ -31,7 +31,6 @@ bot.on('guildMemberAdd', member => {
     var role = member.guild.roles.find('name', 'MEMBRO')
     member.addRole(role); 
     
-   
     let embed = new Discord.RichEmbed()
     .setColor("RANDOM") 
     .setThumbnail(member.user.avatarURL) 
@@ -59,7 +58,6 @@ bot.on('guildMemberAdd', member => {
             let args = cont.slice(1);
 			
         if(cmd === `${prefix}server`){ // Status do servidor
-			
                 let online = message.guild.members.filter(member => member.user.presence.status !== 'offline'); // Verifica quantos membros estão online
                 let day = message.guild.createdAt.getDate()
                 let month = 1 + message.guild.createdAt.getMonth()
