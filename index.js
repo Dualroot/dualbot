@@ -313,7 +313,6 @@ bot.on('guildMemberAdd', member => {
 			message.channel.send(mix);
 		}
 		if(cmd === `${prefix}comedia`){
-			if (!message.channel.comandos) return message.reply("Este comando so pode ser usado canal comandos");
 			var lista_comedia = [ // lista de resposta comedia
 				{files: ["./imgs/1.jpg"]},
 				{files: ["./imgs/2.jpg"]},
