@@ -1,6 +1,6 @@
 /**/
 const Discord = require('discord.js');
-const TOKEN = "NDY0OTE2NzgyNjI1NTg3MjIx.DiF7Jw.tuHKwYmUrxWdS4HXqeceUZKD0ZM";
+const TOKEN = "NDc3MTg1MTk5OTAyMjk0MDI2.Dk4dVw.3usvcjsd2Y6T_xL7q-jLksltWJk";
 const bot = new Discord.Client();
 const randomPuppy = require('random-puppy');
 const moment = require('moment');
@@ -9,14 +9,15 @@ const moment = require('moment');
 bot.on("ready", async() => {
 
 	/*/Avisos/*/
-	//bot.channels.get('462296079946219551').send("Aeh rapaziada eu e o DualRoot vamos dormir, boa noite fiquem com Deus! @here");
-	//bot.channels.get('462296079946219551').send("**~Recebi alguma atualização ou fui modificado em algum!~**");
-	//bot.channels.get('462296079946219551').send("**~Donate atualizadado verifique r!donate no canal #comandos ou será kickado!~**\n@here");
-	//bot.channels.get('462296079946219551').send("**Aeh caralho recebi mais uma atuazalição. ♥**\n```Verifique minha versão: r!att```\n@here");
-	//bot.channels.get('462296079946219551').send(":fire:**~Novidades~**:fire:\n\n//\n@here");
-	//bot.channels.get('462296079946219551').send("**Checker PeixeUrbano adicionado com sucesso. Verifique:** r!chks ♥\n@here");
-    //bot.channels.get('462296079946219551').send("**Tô de volta porra! Sentiram minha falta ? Claro que sim né** ♥");
-    //bot.channels.get('462296079946219551').send("**Soltei algum no #donates** ♥");
+	//bot.channels.get('468783016374697992').send("Aeh rapaziada eu e o DualRoot vamos dormir, boa noite fiquem com Deus! @here");
+	//bot.channels.get('476517145979781141').send("**~Recebi alguma atualização ou fui modificado em algum!~**");
+	bot.channels.get('476517145979781141').send("**~Agora sim, estou 24h online, fui hospedado.~**");
+	//bot.channels.get('476517145979781141').send("**~Donate Netshoes atualizadado verifique r!donates no canal #comandos ou será kickado!~**\n@here");
+	//bot.channels.get('468783016374697992').send("**Aeh caralho recebi mais uma atuazalição. ♥**\n```Verifique minha versão: r!att```\n@here");
+	//bot.channels.get('468783016374697992').send(":fire:**~Novidades~**:fire:\n\n//\n@here");
+	//bot.channels.get('468783016374697992').send("**Checker PeixeUrbano adicionado com sucesso. Verifique:** r!chks ♥\n@here");
+    //bot.channels.get('476517145979781141').send("**Tô de volta porra! Sentiram minha falta ? Claro que sim né** ♥");
+    //bot.channels.get('476517145979781141').send("Por causa do meu tempo parado eu estou em manutenção!!");
     //bot.channels.get('461970304458293258').send(":dollar: **Aproved** :dollar:```markdown\n\nAprovada	4617255002590435	09	19	345	R$ 28,74	VISA CITIBANK (HONG KONG), LTD. GOLD HONG KONG(HK)	Transação Aprovada	#DualRoot```");
     console.log(`${bot.user.username} esta pronto para brincar com ${bot.users.size} utilizadores!`); // console.log so pode ser visto no console do bot
 	console.log("Codigo refeito por ThePlayer. Se tiver alguma duvida chame !! ThePlayer#0951"); // console.log so pode ser visto no console do bot
@@ -28,7 +29,7 @@ bot.on('guildMemberAdd', member => {
 
     console.log('Usuario ' + member.user.username + ' entrou no servidor!'); 
     
-    var role = member.guild.roles.find('name', 'MEMBRO')
+    var role = member.guild.roles.find('name', 'Membros')
     member.addRole(role); 
     
     let embed = new Discord.RichEmbed()
@@ -38,7 +39,7 @@ bot.on('guildMemberAdd', member => {
     .setDescription("Bem vindo ao servidor! " + "<@" + member.user.id + ">" + ", ser fizer baguncinha vamos comer seu ânus.")
     .setFooter("Novo membro") 
     .setTimestamp() 
-    let entrada = member.guild.channels.find('name', 'bem-vindo')
+    let entrada = member.guild.channels.find('name', 'conectados')
     entrada.send(embed) && member.send('Aeh mano(a) bem-vindo(a), qualquer dúvida chame o DualRoot!');
 });
 
@@ -46,7 +47,6 @@ bot.on('guildMemberAdd', member => {
   ///////////////////////////////////
  //           Comandos            //
 ///////////////////////////////////
-
     bot.on('message', async message => { 
 	
 			if (message.author.bot) return; // Checa se o a mensagem foi enviada por um bot
@@ -102,8 +102,8 @@ bot.on('guildMemberAdd', member => {
 			
 			const embed = new Discord.RichEmbed()
 			.setColor("RANDOM")
-			.setAuthor("Donate 01/07", bot.user.avatarURL) //Sem donate espere o DualRoot colocar!
-			.setDescription("**Logins Netshoes**\n\n```markdown\n#APROVADO : girley.simoes@uol.com.br|05490549 | Vales: Sim | Valor: R$ 149,50 | Utilizado: R$ 0,00 | Disponivel: R$ 149,50 | Vencimento: 02/12/2017 | Ativo: Sim\n#APROVADO : lu.peres@uol.com.br|000000 | Vales: Sim | Valor: R$ 179,90 | Utilizado: R$ 179,90 | Disponivel: R$ 0,00 | Vencimento: 06/07/2014 | Ativo: Nao\n#APROVADO : paula-tannus@uol.com.br|pd050467 | Vales: Sim | Valor: R$ 79,00 | Utilizado: R$ 79,00 | Disponivel: R$ 0,00 | Vencimento: 20/12/2017 | Ativo: Nao\n#APROVADO : edvelca@bol.com.br|103254 | Vales: Sim | Valor: R$ 118,90 | Utilizado: R$ 118,90 | Disponivel: R$ 0,00 | Vencimento: 07/12/2016 | Ativo: Nao```");
+			.setAuthor("Donate 09/08", bot.user.avatarURL) //Sem donate espere o DualRoot colocar!
+			.setDescription("**Logins Netshoes**\n\n```markdown\n#APROVADO > victor_ferrare2010@hotmail.com|755667891 | Card: Nao | Valor: R$ 249,99 | Utilizado: R$ 0,00 | Disponivel: R$ 249,99 | Vencimento: -\n#APROVADO > karolzynha28@hotmail.com|210887 | Card: Nao | Valor:  | Utilizado:  | Disponivel:  | Vencimento: \n#APROVADO > ramberta@bol.com.br|morena | Card: Nao | Valor:  | Utilizado:  | Disponivel:  | Vencimento: \n#APROVADO > rambo_rambo05@yahoo.com.br|dr9894. | Card: Sim | Valor: R$ 159,90 | Utilizado: R$ 159,80 | Disponivel: R$ 0,10 | Vencimento: 20/07/2017\n#APROVADO > rita.rios@hotmail.com|ltg2121 | Card: Sim | Valor:  | Utilizado:  | Disponivel:  | Vencimento: \n#APROVADO > rita.novak@hotmail.com|021023 | Card: Sim | Valor: R$ 58,62 | Utilizado: R$ 58,62 | Disponivel: R$ 0,00 | Vencimento: 16/01/2019\n#APROVADO > line617@gmail.com|heaven666 | Card: Nao | Valor:  | Utilizado:  | Disponivel:  | Vencimento: \n#APROVADO > linee102@hotmail.com|597513 | Card: Sim | Valor:  | Utilizado:  | Disponivel:  | Vencimento: \n#APROVADO > lineee_ag@hotmail.com|al1neee3 | Card: Nao | Valor:  | Utilizado:  | Disponivel:  | Vencimento: \n#APROVADO > line-fc@hotmail.com|291901 | Card: Nao | Valor:  | Utilizado:  | Disponivel:  | Vencimento: \n#APROVADO > linegildeise@hotmail.com|11223344 | Card: Nao | Valor:  | Utilizado:  | Disponivel:  | Vencimento: \n#APROVADO > victor_ferrare2010@hotmail.com|755667891 | Card: Nao | Valor: R$ 249,99 | Utilizado: R$ 0,00 | Disponivel: R$ 249,99 | Vencimento: ```");
 			message.channel.send({embed});
 		}
 		if(cmd === `${prefix}donate-pag`){ /*/Versao dele/ /*/
@@ -200,7 +200,8 @@ bot.on('guildMemberAdd', member => {
 			const embed = new Discord.RichEmbed()
 			.setColor("RANDOM")
 			.setAuthor("Code by DualRoot/Ryan") /*/https://chk-netshoes-by-familydualroot.000webhostapp.com/ /*/
-			.setDescription("Netshoes [ON]\n\n**>** [**Click-me**](https://chk-netshoes-by-familydualroot.000webhostapp.com)\n\n`Ajude manter ON fornecendo hospedagem!`");	
+			.setDescription("Netshoes [OFF]\n\n**> NÃO HOSPEDADO OU EM MANUTENÇÃO**")
+			//.setDescription("Netshoes [ON]\n\n**>** [**Click-me**](https://chk-netshoes-by-familydualroot.000webhostapp.com)\n\n`Ajude manter ON fornecendo hospedagem!`");	
 			message.channel.send({embed});
 		}
 		if(cmd === `${prefix}chk-pagseguro`){
@@ -208,7 +209,8 @@ bot.on('guildMemberAdd', member => {
 			const embed = new Discord.RichEmbed()
 			.setColor("RANDOM")
 			.setAuthor("Code by DualRoot/Ryan") /*/https://chk-netshoes-by-familydualroot.000webhostapp.com/ /*/
-			.setDescription("PagSeguro [ON]\n\n**>** [**Click-me**](https://chk-pag-by-familydualroot.000webhostapp.com/)\n\n`Ajude manter ON fornecendo hospedagem!`");
+			.setDescription("PagSeguro [OFF]\n\n**> NÃO HOSPEDADO OU EM MANUTENÇÃO**")
+			//.setDescription("PagSeguro [ON]\n\n**>** [**Click-me**](https://chk-pag-by-familydualroot.000webhostapp.com/)\n\n`Ajude manter ON fornecendo hospedagem!`");
 			message.channel.send({embed});
 		}
 		if(cmd === `${prefix}chk-gold`){
@@ -216,7 +218,7 @@ bot.on('guildMemberAdd', member => {
 			const embed = new Discord.RichEmbed()
 			.setColor("RANDOM")
 			.setAuthor("Code by ShadowProxy") /*/https://chk-netshoes-by-familydualroot.000webhostapp.com/ /*/
-			.setDescription("Gold [ON]\n\n**>** [**Click-me**](http://checkermp.com:8080/gold/)\n\n`Créditos total ao Shadow.`");
+			.setDescription("Gold [OFF]\n\n**> NÃO HOSPEDADO OU EM MANUTENÇÃO**");
 			message.channel.send({embed});
 		}
 		if(cmd === `${prefix}chk-peixe`){
@@ -224,7 +226,7 @@ bot.on('guildMemberAdd', member => {
 			const embed = new Discord.RichEmbed()
 			.setColor("RANDOM")
 			.setAuthor("Code by Loocked") /*/https://chk-netshoes-by-familydualroot.000webhostapp.com/ /*/
-			.setDescription("PeixeUrbano [ON]\n\n>**>** [**Click-me**](http://18.191.165.253/)\n\n`Code Loocked. Talvez tenha CX2 !!!`");
+			.setDescription("PeixeUrbano [OFF]\n\n**> NÃO HOSPEDADO OU EM MANUTENÇÃO**");
 			message.channel.send({embed});
 		}
 		if(cmd === `${prefix}DualRoot?`){ // comando dualroot
@@ -268,7 +270,7 @@ bot.on('guildMemberAdd', member => {
 
 			/* Cria um embed */
 			let embed = new Discord.RichEmbed() 
-				.setTitle(member.tag + '\' Coisa mais do que essa nunca nem vi') // titulo do embed "avatar"
+				.setTitle(member.tag + '\' Coisinha linda') // titulo do embed "avatar"
 				.setImage(member.avatarURL); // avatar do membro
 
 			/* Envia o embed */
