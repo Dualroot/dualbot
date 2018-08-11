@@ -1,6 +1,6 @@
 /**/
 const Discord = require('discord.js');
-const TOKEN = "NDc3MTg1MTk5OTAyMjk0MDI2.Dk4dVw.3usvcjsd2Y6T_xL7q-jLksltWJk";
+const TOKEN = "NDc3MTg1MTk5OTAyMjk0MDI2.DlBkTQ.ajWKEqG2TPmY3R5adDq37cQxRc8";
 const bot = new Discord.Client();
 const randomPuppy = require('random-puppy');
 const moment = require('moment');
